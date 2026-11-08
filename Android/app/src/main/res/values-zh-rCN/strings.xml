@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_subtitle">让手机成为真正的路由器</string>
+    <string name="unknown">未知</string>
+    <string name="close">关闭</string>
+    <string name="back">返回</string>
+
+    <string name="welcome_body">在手机的 Wi-Fi 芯片上运行真正的无线接入点，由 hostapd 和 dnsmasq 驱动。与 Linux 路由器使用相同的软件，直接运行在手机自己的内核上。</string>
+    <string name="get_started">开始使用</string>
+    <string name="next">下一步</string>
+    <!-- %1$d 是当前页码，%2$d 是总页数 -->
+    <string name="page_counter">第 %1$d 页，共 %2$d 页</string>
+    <string name="feat_upstream_title">共享任意网络连接</string>
+    <string name="feat_upstream_desc">移动数据、Wi-Fi 或 VPN。设备可以通过你选择的上游网络连接，也可以跟随手机当前使用的网络。</string>
+    <string name="feat_openwrt_title">以 OpenWrt 作为路由器</string>
+    <string name="feat_openwrt_desc">将热点交给 Droidspaces 中的 OpenWrt 容器管理。防火墙区域、端口转发、单设备限速和 LuCI，全都在手机上运行。</string>
+    <string name="feat_radio_title">调整无线参数</string>
+    <string name="feat_radio_desc">选择 2.4 或 5 GHz、信道和带宽、WPA2 或 WPA3，还可以隐藏网络名称并固定网关，让已保存的地址继续可用。</string>
+
+    <string name="checking_root">正在检查 root 权限…</string>
+    <string name="root_access_title">Root 权限</string>
+    <string name="root_access_body">VirtualAP 需要 root 权限来创建虚拟接口并运行无线接入点。Root 管理器会请求你授权。</string>
+    <string name="root_check_body">VirtualAP 需要 root 权限来创建虚拟网络接口并管理无线接入点。</string>
+    <string name="root_denied">Root 权限已被拒绝</string>
+    <string name="grant_root">授予 root 权限</string>
+    <string name="check_root_again">重新检查</string>
+
+    <string name="setup_title">正在设置 VirtualAP</string>
+    <string name="setup_installing_body">正在部署静态编译的二进制文件，请稍候。</string>
+    <string name="installation_complete">安装完成</string>
+    <string name="setup_done_body">后端已就绪。</string>
+    <string name="installation_failed">安装失败</string>
+    <string name="done">完成</string>
+    <string name="retry">重试</string>
+    <string name="setup_verify_failed">验证失败：安装后缺少二进制文件或文件不可执行</string>
+    <!-- %1$s 是 root shell 输出的错误信息 -->
+    <string name="setup_module_failed">无法安装开机模块：%1$s</string>
+    <!-- %1$s 是文件名，%2$s 是复制命令的输出 -->
+    <string name="setup_deploy_failed">部署 %1$s 失败：%2$s</string>
+
+    <string name="start_ap">启动无线接入点</string>
+    <string name="stop_ap">停止无线接入点</string>
+    <string name="starting">正在启动…</string>
+    <string name="stopping">正在停止…</string>
+    <string name="enter_ssid_prompt">输入网络名称以开始使用</string>
+
+    <string name="access_point_title">无线接入点</string>
+    <string name="ssid_label">网络名称（SSID）</string>
+    <string name="password_label">密码（8-63 个字符）</string>
+    <string name="password_length_error">长度必须为 8-63 个字符</string>
+    <string name="ssid_length_error">网络名称过长</string>
+    <string name="hide_password_desc">隐藏密码</string>
+    <string name="show_password_desc">显示密码</string>
+    <string name="band_label">频段</string>
+    <string name="channel_label">信道</string>
+    <string name="auto_label">自动</string>
+    <string name="width_label">信道带宽</string>
+    <string name="security_label">安全性</string>
+    <string name="security_open">开放网络</string>
+    <string name="security_wpa2">WPA2-Personal</string>
+    <string name="security_wpa2_wpa3">WPA2/WPA3-Personal</string>
+    <string name="security_wpa3">WPA3-Personal</string>
+    <string name="security_wpa3_hint">WPA3 可能无法在所有设备上正常工作。有些手机可以启动热点，但客户端无法连接或获取 IP 地址，较旧的客户端设备也可能完全无法加入。为获得最佳兼容性，请使用 WPA2-Personal。</string>
+    <string name="band_2ghz">2.4 GHz</string>
+    <string name="band_5ghz">5 GHz</string>
+    <string name="width_20">20 MHz</string>
+    <string name="width_40">40 MHz</string>
+    <string name="width_80">80 MHz</string>
+
+    <string name="upstream_card_title">上游网络</string>
+    <string name="upstream_interface_label">上游网络接口</string>
+    <string name="upstream_auto">自动（推荐）</string>
+    <string name="container_label">容器</string>
+    <string name="container_upstream_desc">此 Droidspaces 容器负责热点的 DHCP、DNS 和 NAT。</string>
+    <string name="interface_upstream_desc">VirtualAP 通过此接口处理 DHCP、DNS 和 NAT。</string>
+
+    <string name="advanced_settings_title">高级设置</string>
+    <string name="hidden_ssid_label">隐藏 SSID</string>
+    <string name="hidden_ssid_desc">不广播网络名称，客户端需要手动连接</string>
+    <string name="pmf_label">受保护的管理帧</string>
+    <string name="pmf_desc">为 WPA2 启用 802.11w 保护。如果较旧的设备无法连接，请关闭此选项</string>
+    <string name="ttl_fix_label">TTL 修正</string>
+    <string name="ttl_fix_desc">让客户端流量使用与手机自身相同的 TTL，避免运营商识别出这是网络共享流量</string>
+    <string name="ttl_fix_unsupported">此内核不支持</string>
+    <string name="ipv6_desc">上游支持 IPv6 时为客户端提供 IPv6。内核支持时，在私有前缀上使用 NAT66，否则使用上游自己的 /64 前缀</string>
+    <string name="gateway_mac_label">网关 MAC</string>
+    <string name="mac_mode_random">每次启动时随机生成</string>
+    <string name="mac_mode_persistent">随机生成一次</string>
+    <string name="mac_mode_static">固定 MAC</string>
+    <string name="mac_address_label">MAC 地址</string>
+    <string name="mac_random_desc">每次启动时生成新地址，因此已连接设备每次都会看到一个新网络。热点运行时会在此显示</string>
+    <string name="mac_persistent_desc">随机生成一次并保存。你也可以输入自己的地址</string>
+    <string name="mac_static_desc">默认使用此手机自己的 Wi-Fi MAC 地址。你也可以输入其他地址</string>
+    <string name="mac_static_unknown">无法读取此手机的 Wi-Fi MAC 地址，请输入一个地址</string>
+    <string name="mac_error">请输入单播 MAC 地址，例如 02:1a:2b:3c:4d:5e</string>
+    <string name="gateway_ip_label">网关 IP</string>
+    <string name="gateway_ip_desc">留空则使用默认值（192.168.42.1）</string>
+    <string name="gateway_ip_error">请输入有效的 IPv4 地址（例如 192.168.42.1）</string>
+    <string name="dns_servers_label">DNS 服务器</string>
+    <string name="dns_servers_desc">上游 DNS 服务器，以逗号分隔。留空时使用 1.1.1.1 和 8.8.8.8。</string>
+    <string name="dns_servers_placeholder">例如 1.1.1.1, 8.8.8.8</string>
+    <string name="dns_servers_error">请输入以逗号分隔的有效 IPv4 地址</string>
+
+    <string name="status_running">运行中</string>
+    <!-- %1$s 是引擎输出的日期和时间，例如 2026-11-04 14:05:33 -->
+    <string name="since_time">启动时间：%1$s</string>
+    <!-- %1$s 是信道编号 -->
+    <string name="channel_short">信道 %1$s</string>
+    <!-- %1$s 是信道带宽 -->
+    <string name="width_mhz">%1$s MHz</string>
+    <string name="gateway_label">网关</string>
+    <string name="upstream_label">上游网络</string>
+    <!-- %1$s 是容器名称 -->
+    <string name="upstream_managed_by">由 %1$s 管理</string>
+    <string name="interface_label">接口</string>
+    <string name="clients_label">客户端</string>
+    <string name="clients_show">显示已连接设备</string>
+    <string name="clients_title">设备</string>
+    <string name="clients_empty">没有已连接的设备</string>
+    <!-- %1$d 是设备数量 -->
+    <string name="devices_connected">已连接（%1$d）</string>
+    <!-- %1$d 是设备数量 -->
+    <string name="devices_blocked">已阻止（%1$d）</string>
+    <string name="device_block">阻止</string>
+    <string name="device_unblock">取消阻止</string>
+    <!-- %1$s 是设备名称 -->
+    <string name="device_block_named">阻止 %1$s</string>
+    <!-- %1$s 是设备名称 -->
+    <string name="device_unblock_named">取消阻止 %1$s</string>
+    <string name="block_failed">无法更改设备状态，请重试</string>
+    <string name="device_remove">移除</string>
+    <string name="device_remove_named">移除 %1$s</string>
+    <string name="hotspot_header">热点</string>
+    <string name="blocked_title">已阻止的设备</string>
+    <string name="blocked_none">无</string>
+    <string name="blocked_empty">没有被阻止的设备</string>
+    <string name="lists_unreadable">无法读取此列表</string>
+    <string name="blocked_idle">仅允许列表中的设备加入时，此列表不会生效。</string>
+    <string name="not_in_use">未使用</string>
+    <string name="allowed_title">允许的设备</string>
+    <string name="allowed_empty">还没有设备</string>
+    <string name="allowed_idle">启用“仅允许列表中的设备加入”后，此列表才会生效。</string>
+    <string name="allow_only_title">仅允许列表中的设备加入</string>
+    <string name="allow_only_on">已开启。其他设备无法加入</string>
+    <string name="allow_only_off">已关闭。除被阻止的设备外，所有设备均可加入</string>
+    <string name="allow_only_needs_device">请先将设备添加到允许列表</string>
+    <string name="allow_only_confirm_title">仅允许列表中的设备加入？</string>
+    <string name="allow_only_confirm_body">以下设备当前已连接，但不在允许列表中。除非勾选这些设备，否则它们将断开连接。</string>
+    <string name="allow_only_turn_on">开启</string>
+    <string name="device_add">添加设备</string>
+    <string name="device_add_confirm">添加</string>
+    <string name="device_add_blocked">添加到阻止列表</string>
+    <string name="device_add_allowed">添加到允许列表</string>
+    <string name="device_name_optional">名称（可选）</string>
+    <string name="mac_label">MAC 地址</string>
+    <string name="mac_copy">复制 MAC 地址</string>
+    <string name="mac_copied">已复制 MAC 地址</string>
+    <string name="mac_help">仅输入数字和 a 到 f，冒号会自动添加。</string>
+    <string name="mac_zeros">全零不是有效的设备地址。</string>
+    <string name="mac_broadcast">这是广播地址，不是设备地址。</string>
+    <string name="mac_group">这是组播地址，不是设备地址。设备地址的第二个十六进制数字必须为偶数。</string>
+    <!-- %1$s 是此设备保存时使用的名称 -->
+    <string name="mac_listed">已在此列表中，名称为 %1$s。</string>
+    <string name="mac_on_blocked">此设备已在阻止列表中。添加到此处会将它移入允许列表。</string>
+    <string name="mac_on_allowed">此设备已在允许列表中。添加到此处会将它移入阻止列表。</string>
+    <string name="mac_random_note">手机默认会为每个网络使用随机地址。请填写此设备在该热点 Wi-Fi 详情中显示的地址，而不是硬件地址。</string>
+    <string name="blocked_note">阻止规则只针对这个 MAC 地址。更改 MAC 地址的设备仍可重新加入；更换密码可以阻止这种情况。</string>
+    <string name="client_unnamed">未命名设备</string>
+    <string name="qr_title">Wi-Fi 二维码</string>
+    <string name="qr_scan_hint">使用手机相机扫描以加入网络</string>
+
+    <string name="view_logs">查看日志</string>
+    <string name="logs_title">日志</string>
+    <string name="running_log_title">正在运行…</string>
+    <string name="no_logs_msg">暂无日志输出。</string>
+    <string name="terminal_logs">终端日志</string>
+    <string name="copy_logs">复制日志</string>
+    <string name="logs_copied">日志已复制到剪贴板</string>
+    <string name="clear_logs">清除日志</string>
+
+    <string name="settings_title">设置</string>
+    <string name="start_at_boot_label">开机时启动无线接入点</string>
+    <string name="start_at_boot_desc">手机启动后自动启动已保存的无线接入点</string>
+    <string name="appearance_header">外观</string>
+    <string name="language">语言</string>
+    <string name="system_default">跟随系统</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="follow_system_theme_label">跟随系统主题</string>
+    <string name="follow_system_theme_desc">自动匹配系统的浅色或深色模式</string>
+    <string name="dark_mode_label">深色模式</string>
+    <string name="dark_mode_desc">无论系统设置如何，始终使用深色主题</string>
+    <string name="amoled_mode_label">AMOLED 模式</string>
+    <string name="amoled_mode_desc">使用纯黑背景以节省 OLED 屏幕的电量</string>
+    <string name="dynamic_color_label">动态取色</string>
+    <string name="dynamic_color_desc">从壁纸提取颜色（Material You）</string>
+    <string name="color_palette_header">颜色主题</string>
+    <string name="palette_broccoli">西兰花</string>
+    <string name="palette_sand">沙滩</string>
+    <string name="palette_ocean">海洋</string>
+    <string name="palette_forest">森林</string>
+    <string name="palette_sunset">日落</string>
+    <string name="palette_amethyst">紫水晶</string>
+    <string name="palette_sakura">樱花</string>
+
+    <string name="about_header">关于</string>
+    <string name="about_virtualap">关于 VirtualAP</string>
+    <string name="about_description">将已获取 root 权限的 Android 手机变成真正的无线接入点，由直接运行在 Android 上的静态编译 hostapd 和 dnsmasq 二进制文件提供支持。</string>
+    <string name="maintainer_header">维护者</string>
+    <string name="maintainer_role">维护者</string>
+    <string name="source_code">源代码</string>
+
+    <string name="tile_configure_first">请先在 VirtualAP 中设置网络名称和密码</string>
+    <string name="notification_channel">热点状态</string>
+</resources>

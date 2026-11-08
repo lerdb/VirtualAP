@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- %1$d 是已连接的设备数量 -->
+    <plurals name="notification_clients">
+        <item quantity="other">已连接 %1$d 台设备</item>
+    </plurals>
+    <!-- %1$d 是 MAC 地址中还需输入的字符数 -->
+    <plurals name="mac_digits_left">
+        <item quantity="other">还需输入 %1$d 位</item>
+    </plurals>
+    <!-- %1$d 是设备数量 -->
+    <plurals name="blocked_count">
+        <item quantity="other">%1$d 台设备</item>
+    </plurals>
+</resources>
